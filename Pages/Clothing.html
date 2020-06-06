@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    
+	<link rel="stylesheet" href="Style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Animate CSS-->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--BootNavbar CSS-->
+    <link rel="stylesheet" href="../css/bootnavbar.css">
+
+    <!--BootNavbar Js-->
+    <script src="../js/bootnavbar.js"></script>
+
+    </head>
+    <body style="background-color: #f6f6f6;">
+		<!--============================================ Navigation Bar============================================ -->
+		<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-md bg-primary navbar-dark topnav">
+				<!-- Collapse Icon -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarCollapse"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar navbar-collapse" id="NavbarCollapse">
+					<ul class="navbar-nav">
+						<!-- Navbar Items Start-->
+						<li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+						<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+							<!-- Dropdown -->
+							<ul class="dropdown-menu">
+								<li class="dropdown"><a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown">Facebook</a>
+									<!-- Nested Dropdown -->
+									<ul class="dropdown-menu">
+										<li><a href="https://facebook.com" class="dropdown-item">ON Shopping</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown">Youtube</a>
+									<!-- Nested Dropdown -->
+									<ul class="dropdown-menu">
+										<li><a href="https://youtube.com" class="dropdown-item">ON Shopping</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown">Insatgram</a>
+									<!-- Nested Dropdown -->
+									<ul class="dropdown-menu">
+										<li><a href="https://instagram.com" class="dropdown-item">ON Shopping</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Track My Order</a>
+							<!-- Dropdown -->
+							<ul class="dropdown-menu">
+									<input type="text" name="" placeholder="Tracking Number" class="form-control mr-md-2">
+									<center><button class="btn btn-primary mt-1">Track</button></center>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="#MyModal" class="nav-link" data-toggle="modal">About</a></li>
+						<!-- Navbar Items End-->
+						<!-- Modal Start-->
+						<div class="modal" id="MyModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">We Provide Best</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<div class="modal-body">
+										ON Shopping is a trusted online shopping website.You can shop different items here for one good price.We have
+										a 7 day return policy in case there's a problem with the items you've received.Happy shopping :)
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal End-->
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Sign Up</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-md bg-light navbar-light">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-4">
+							<!-- Brand -->
+							<a href="Home.html" class="navbar-brand" style="font-size: 25px; font-weight:600;">ON Shopping</a>
+						</div>
+						<div class="col-md-6">
+							<!-- Search Bar -->
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<form class="form-inline" style="margin-top: 5px;">
+										<input type="text" name="" placeholder="Search" class="form-control mr-2" size="50">
+										<button class="btn btn-success">Search</button>
+										<a href="#" class="fa fa-shopping-cart ml-4" style="font-size: 30px;"></a> 
+									</form>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<!-- ============================================ Slider ============================================ -->
+		<div style="background-color: blue;">
+			<div class="container mt-3">
+				<div class="col-md-12">
+					<div class="row">
+						<!-- carousel -->
+						<div id="slider" class="carousel slide" data-ride="carousel" data-interval="2000">
+							<!-- indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#slider" data-slide-to="0" class="active"></li>
+								<li data-target="#slider" data-slide-to="1"></li>
+								<li data-target="#slider" data-slide-to="2"></li>
+								<li data-target="#slider" data-slide-to="3"></li>
+								<li data-target="#slider" data-slide-to="4"></li>
+								<li data-target="#slider" data-slide-to="5"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="../Images/carousel1.jpg" class="img-fluid" alt="carousel1">
+								</div>
+								<div class="carousel-item">
+									<img src="../Images/carousel2.jpg" class="img-fluid" alt="carousel1">
+								</div>
+								<div class="carousel-item">
+									<img src="../Images/carousel3.jpg" class="img-fluid" alt="carousel1">
+								</div>
+								<div class="carousel-item">
+									<img src="../Images/carousel4.jpg" class="img-fluid" alt="carousel1">
+								</div>
+								<div class="carousel-item">
+									<img src="../Images/carousel5.jpg" class="img-fluid" alt="carousel1">
+								</div>
+								<div class="carousel-item">
+									<img src="../Images/carousel6.jpg" class="img-fluid" alt="carousel1">
+								</div>
+							</div>
+							<a href="#slider" class="carousel-control-prev" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span></a>
+								
+							<a href="#slider" class="carousel-control-next" data-slide="next">
+								<span class="carousel-control-next-icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =========================================Categories=========================================== -->
+		<div class="container mt-3">
+			<div class="col-md-12">
+				<div class="row">
+					<p style="color: rgb(82, 79, 79);font-size:30px;">Categories</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<a href="Electronics.html" style="text-decoration: none;">
+							<div class="div shadow-sm" style="border-radius:30px;font-size:20px;padding:8px;background-color: white;">
+								<i href="#"class="fa fa-desktop" style=" color:black;border-radius: 50%; background-color:rgb(134, 209, 13);padding:10px"></i>
+								<span style="color: black;">Electronics</span>
+							</div>	
+						</a>	
+					</div>
+					<div class="col-md-3">
+						<a href="Clothing.html" style="text-decoration: none;">
+							<div class="div shadow-sm" style="border-radius:30px;font-size:20px;padding:8px;background-color: white;">
+								<i href="#"class="fa fa-tshirt" style=" color:black;border-radius: 50%; background-color:rgb(92, 95, 221);padding:10px"></i>
+								<span style="color: black;">Clothing</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="Vehicles.html" style="text-decoration: none;">
+							<div class="div shadow-sm" style="border-radius:30px;font-size:20px;padding:8px;background-color: white;">
+								<i href="#"class="fa fa-car" style=" color:black;border-radius: 50%; background-color:rgba(255, 46, 9, 0.87);padding:10px"></i>
+								<span style="color: black;">Vehicles</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="Grocery.html" style="text-decoration: none;">
+							<div class="div shadow-sm" style="border-radius:30px;font-size:20px;padding:8px;background-color: white;">
+								<i href="#"class="fa fa-carrot" style=" color:black;border-radius: 50%; background-color:rgba(202, 236, 10, 0.5);padding:10px"></i>
+								<span style="color: black;">Grocery</span>
+								<!-- <i href="#"class="fa fa-chevron-right" style="visibility:hidden;color:black;margin-left:80px"></i> -->
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =========================================Tabs=========================================== -->
+		<br>
+		<div class="container">
+			<div class="col-md-12">
+				<h3 class="Display-6">Clothing</h3>
+				<!-- Nav Tabs -->
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a href="#men" data-toggle="tab" class="nav-link active">Men's</a></li>
+					<li class="nav-item"><a href="#women" data-toggle="tab" class="nav-link">Women's</a></li>
+					<li class="nav-item"><a href="#children" data-toggle="tab" class="nav-link">Children's</a></li>
+				</ul>
+				<!-- Tab Content -->
+				<div class="tab-content">
+					<div id="men" class="tab-pane active">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kurta</h2>
+										<p class="card-text">This is men's kurta shalwar</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Tracksuit</h2>
+										<p class="card-text">This is men's track suit</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN5.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Coat</h2>
+										<p class="card-text">This is men's Coat</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kurta</h2>
+										<p class="card-text">This is men's kurta shalwar</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Tracksuit</h2>
+										<p class="card-text">This is men's track suit</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN5.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Coat</h2>
+										<p class="card-text">This is men's Coat</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kurta</h2>
+										<p class="card-text">This is men's kurta shalwar</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Tracksuit</h2>
+										<p class="card-text">This is men's track suit</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN5.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Coat</h2>
+										<p class="card-text">This is men's Coat</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/MEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Shirt</h2>
+										<p class="card-text">This is men's shirt</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="women" class="tab-pane fade">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/WOMEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women2.png" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is womens frock</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women3.jpeg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women4.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/WOMEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women2.png" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is womens frock</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women3.jpeg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women4.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/WOMEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women2.png" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is womens frock</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women3.jpeg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women4.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/WOMEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women2.png" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is womens frock</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women3.jpeg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women4.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/WOMEN1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women2.png" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is womens frock</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women3.jpeg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Women4.webp" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Kameez</h2>
+										<p class="card-text">This is womens traditional Clothing</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="children" class="tab-pane fade">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Pant shirt</h2>
+										<p class="card-text">This is Pant shirt suit for boys</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Pant shirt</h2>
+										<p class="card-text">This is Pant shirt suit for boys</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Pant shirt</h2>
+										<p class="card-text">This is Pant shirt suit for boys</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children1.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children3.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Pant shirt</h2>
+										<p class="card-text">This is Pant shirt suit for boys</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children2.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children4.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+								<div class="col-md-3 text-center">
+									<div class="card">
+										<img src="../Images/Children5.jpg" class="img-fluid card-img-top mx-auto" style="height: 150px; width: 200px; display: inline;" alt="TV image">
+										<h2 class="card-title">Frock</h2>
+										<p class="card-text">This is a Frock for girls</p>
+										<button class="btn btn-primary">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+							
+		<!-- ============================================ Footer ============================================ -->
+		<br>
+		<div class="col-md-12" style="background-color: rgb(0, 44, 102);">
+			<div class="row">
+				<div class="col-md-3 text-light mt-2">
+					<h6 class="display-6 text-light"><b>Company Name:</b></h6>
+					<p class="text-success">ON SHOPPING</p>
+				</div>
+				<div class="col-md-3 text-light mt-2">
+					<h6 class="display-6 text-light"><b>Our Products</b></h6>
+					<p class="text-success">We've got Clothing,Electroincs,Vehicles and grocery items</p>
+				</div>
+				<div class="col-md-3 text-light mt-2">
+					<h6 class="display-6 text-light"><b>How to contact?</b></h6>
+					<ul class="text-success">
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Email</li>
+						<li>Phone Number</li>
+					</ul>
+				</div>
+				<div class="col-md-3 text-light mt-2">
+					<h6 class="display-6 text-light"><b>Contact Details</b></h6>
+					<ul class="text-success" style="list-style-type: none;">
+						<li><i class="fa fa-home d-inline ml-0 pl-0 mr-1"></i>Islamabad Pakistan</li>
+						<li><i class="fa fa-envelope d-inline mr-1"></i>onshop@gmail.com</li>
+						<li><i class="fa fa-fire d-inline mr-1"></i>ON-SHOP</li>
+						<li><i class="fa fa-phone d-inline mr-1"></i>03123456789</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 mt-3" style="background-color: white;">
+			<div class="row">
+				<div class="col-md-4 text-light mt-4"><p style="color: rgb(54, 54, 54);">Payment Methods</p></div>
+				<div class="col-md-4 text-light mt-4"><p style="color: rgb(54, 54, 54);">Follow Us</p></div>
+				<div class="col-md-4 text-light mt-4"><p style="color: rgb(54, 54, 54);">ON Shopping International</p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-light">
+					<img src="../Images/VISA.png" style="width: 60px;height: 20px;" alt="">
+					<img src="../Images/Mastercard.jpg" style="width: 60px;height: 30px;" alt="">
+					<img src="../Images/Easypaisa.jpg" style="width: 60px;height: 30px;" alt="">
+				</div>
+				<div class="col-md-4 text-light">
+					<a href="https://facebook.com" class="fa fa-facebook"></a>
+					<a href="https://twitter.com" class="fa fa-twitter"></a>
+					<a href="https://youtube.com" class="fa fa-youtube"></a>
+					<a href="https://instagram.com" class="fa fa-instagram"></a>
+				</div>
+				<div class="col-md-4 text-light">
+					<img src="../Images/PAK.png" style="width: 40px;height: 40px; border-radius:50%"; alt="">
+					<img src="../Images/US.jpg" style="width: 40px;height: 40px; border-radius:50%"; alt="">
+					<img src="../Images/CANADA.png" style="width: 40px;height: 40px; border-radius:50%"; alt="">
+					<img src="../Images/BANG.png" style="width: 40px;height: 40px; border-radius:50%"; alt="">
+				</div>
+			</div>
+			<br>
+		</div>
+		<div class="col-md-12 text-center">
+				&copy;2020 Copyright, ON SHOPPING
+		</div>
+    </body>
+</html>
+
+<script type="text/javascript">
+	$(function(){
+$("#bootnavbar").bootnavbar();
+});
+</script>

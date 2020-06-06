@@ -1,0 +1,65 @@
+@media only screen and (min-width: 600px) {
+.topnav{
+    height: 30px;
+}
+}
+a:hover{
+font-size: 20px;
+transition: 0.5s;
+}
+.card{
+    border:none !important;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.div:hover{
+     /* background-color: grey !important;  */
+
+    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2) !important;
+    font-size: 25px !important;
+    transition: 0.5s;
+}
+.fa-facebook{
+    font-size: 20px !important;
+    color:blue;
+    border: 3px solid blue;
+    border-radius: 50%;
+    padding: 10px 14px;
+}
+.fa-twitter{
+    font-size: 20px !important;
+    color: rgb(61, 170, 221);
+    border: 3px solid rgb(61, 170, 221);
+    border-radius: 50%;
+    padding: 10px;
+}
+.fa-youtube{
+    font-size: 20px !important;
+    color:red;
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 10px 11px;
+}
+.fa-instagram{
+    font-size: 20px !important;
+    color:rgb(221, 96, 116);
+    border: 3px solid rgb(221, 96, 116);
+    border-radius: 50%;
+    padding: 10px 11px;
+}
+/* .div:hover + div{
+    background-color: blue !important;
+    visibility:show !important;
+    box-shadow: 10px;
+} */
+/* a {
+    position: relative;
+}
+a:hover {
+
+    /* content:'> ';
+    position: absolute;
+    left: -20px;   equal to padding-left
+} */
